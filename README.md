@@ -2,13 +2,12 @@ Meteor Admin
 ============
 `$ meteor add buduguru:admin`
  		 
-This is a fork of `yogiben:admin` with some improvements.	
+This package was originally a fork of `yogiben:admin` but was moved to its own detached repo.	
 		
-Differences are:		
+Differences `yogiben:admin` to are:		
 		
-- coffee -> vanilla js (TODO: convert readme snippets too)		
+- coffee -> vanilla js (TODO: convert readme snippets too) (this is one of main reason why it is not a fork anymore)	
 - AdminLTE template is updated from 1.2 to 2.1 (TODO: update screenshots in README)		
-- TODO: Integrate with `webix:webix`
 - TODO: Integrate with `tap:i18n`
 
 Screenshots below are outdated, check AdminLTE template demo [here](http://almsaeedstudio.com/themes/AdminLTE/) 
@@ -18,9 +17,9 @@ A complete admin dashboard solution for meteor built off the [iron-router](https
 
 **Feedback Welcome.** Please create an issue.
 
-![alt tag](https://raw.githubusercontent.com/yogiben/meteor-admin/master/readme/screenshot1.png)
+![alt tag](https://raw.githubusercontent.com/buduguru/meteor-admin/master/readme/screenshot1.png)
 
-![alt tag](https://raw.githubusercontent.com/yogiben/meteor-admin/master/readme/screenshot2.png)
+![alt tag](https://raw.githubusercontent.com/buduguru/meteor-admin/master/readme/screenshot2.png)
 
 ### Getting started ###
 
@@ -33,7 +32,7 @@ This package is designed to work with certain types of projects. Your project sh
 * Fontawesome - e.g. `meteor add fortawesome:fontawesome`
 
 #### 1. Install ####
-CD to your app directory and run `meteor add yogiben:admin` then go to `/admin` for the setup wizzard.
+CD to your app directory and run `meteor add buduguru:admin` then go to `/admin` for the setup wizzard.
 
 #### 2. Config ####
 The simplest possible config with one, 'Posts', collection.
