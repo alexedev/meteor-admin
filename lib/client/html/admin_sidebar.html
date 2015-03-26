@@ -1,0 +1,76 @@
+<template name="AdminSidebar">
+	<aside class="main-sidebar sidebar-offcanvas">
+		<!-- sidebar: style can be found in sidebar.less -->
+		<section class="sidebar">		
+			<!-- search form -->
+			<!--<form class="sidebar-form">
+				<div class="input-group">
+					<input type="text" id="search" name="q" class="form-control" placeholder="Search..."/>
+					<span class="input-group-btn">
+						<button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</form>-->
+			<!-- /.search form -->
+			<!-- sidebar menu: : style can be found in sidebar.less -->
+			<ul class="sidebar-menu">
+				<li class="active">
+					<a href="{{pathFor 'adminDashboard'}}">
+						<i class="fa fa-dashboard"></i> <span>Dashboard</span>
+					</a>
+				</li>
+				{{#each admin_collections}}
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-{{this.icon}}"></i>
+						<span>{{this.label}}</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="{{pathFor 'adminDashboardNew' collection=this.name}}"><i class="fa fa-angle-double-right"></i> New</a></li>
+						<li><a href="{{pathFor 'adminDashboardView' collection=this.name}}"><i class="fa fa-angle-double-right"></i> View All</a></li>
+						{{#each admin_collection_items}}
+						<li><a href="{{url}}"><i class="fa fa-angle-double-right"></i> {{title}}</a></li>
+						{{/each}}
+					</ul>
+				</li>
+				{{/each}}
+				{{#each admin_sidebar_items}}
+					{{#if options.urls}}
+						{{> adminSidebarItemTree}}
+					{{else}}
+						{{> adminSidebarItem}}
+					{{/if}}
+				{{/each}}
+			</ul>
+		</section>
+	</aside>
+</template>
+
+<template name="adminSidebarItem">
+	<li>
+		<a href="{{url}}">
+			{{#if options.icon}}
+			<i class="fa fa-{{options.icon}}"></i>
+			{{/if}}
+			<span>{{title}}</span>
+		</a>
+	</li>
+</template>
+
+<template name="adminSidebarItemTree">
+	<li class="treeview">
+		<a href="#">
+			{{#if options.icon}}
+			<i class="fa fa-{{options.icon}}"></i>
+			{{/if}}
+			<span>{{title}}</span>
+			<i class="fa fa-angle-left pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+			{{#each options.urls}}
+			<li><a href="{{url}}"><i class="fa fa-angle-double-right"></i>{{title}}</a></li>
+			{{/each}}
+		</ul>
+	</li>
+</template>
