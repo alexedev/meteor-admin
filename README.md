@@ -7,7 +7,7 @@ This package was originally a fork of `yogiben:admin` but was moved to its own d
 Differences `yogiben:admin` to are:		
 		
 - coffee -> vanilla js (TODO: convert readme snippets too) (this is one of main reason why it is not a fork anymore)	
-- AdminLTE template is updated from 1.2 to 2.1 (TODO: update screenshots in README)		
+- AdminLTE template is updated from 1.2 to 2.0.5 (TODO: update screenshots in README)		
 - TODO: Integrate with `tap:i18n`
 
 Screenshots below are outdated, view the [AdminLTE template demo](https://almsaeedstudio.com/preview) 
