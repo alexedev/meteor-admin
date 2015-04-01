@@ -10,7 +10,7 @@ Differences `yogiben:admin` to are:
 - AdminLTE template is updated from 1.2 to 2.1 (TODO: update screenshots in README)		
 - TODO: Integrate with `tap:i18n`
 
-Screenshots below are outdated, check AdminLTE template demo [here](http://almsaeedstudio.com/themes/AdminLTE/) 
+Screenshots below are outdated, view the [AdminLTE template demo](https://almsaeedstudio.com/preview) 
 
 A complete admin dashboard solution for meteor built off the [iron-router](https://github.com/EventedMind/iron-router),  [roles](https://github.com/alanning/meteor-roles/) and [autoform](https://github.com/aldeed/meteor-autoform) packages and frontend from the open source admin dashboard template, [Admin LTE](https://github.com/almasaeed2010/AdminLTE).
 
