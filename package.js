@@ -15,7 +15,7 @@ Package.on_use(function(api){
     ['iron:router@1.0.7',
     'underscore',
     'aldeed:collection2@2.3.2',
-    'aldeed:autoform',
+    'aldeed:autoform@5.3.0',
     'aldeed:template-extension@3.1.1',
     'alanning:roles@1.2.13',
     'raix:handlebar-helpers@0.2.4',
