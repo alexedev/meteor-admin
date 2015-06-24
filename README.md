@@ -1,5 +1,8 @@
+DEPRECATED: the package is no longer supported. Go `add yogiben:admin` instead https://github.com/yogiben/meteor-admin
+=============
+
 Meteor Admin
-============
+--------------
 
 WARNING: the current version package is not optimised to use with autoform 5.0.0 and higher. 4.2.2 is recommended.
 Unfortunately I do not have enough time to update the package.
