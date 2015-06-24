@@ -1,7 +1,7 @@
 Package.describe({
   name: "buduguru:admin",
   summary: "A complete admin dashboard solution",
-  version: "1.1.7",
+  version: "1.1.6",
   git: "https://github.com/buduguru/meteor-admin"
 });
 
@@ -15,7 +15,7 @@ Package.on_use(function(api){
     ['iron:router@1.0.7',
     'underscore',
     'aldeed:collection2@2.3.2',
-    'aldeed:autoform@5.3.0',
+    'aldeed:autoform@4.2.2',
     'aldeed:template-extension@3.1.1',
     'alanning:roles@1.2.13',
     'raix:handlebar-helpers@0.2.4',
