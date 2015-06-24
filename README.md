@@ -1,5 +1,9 @@
 Meteor Admin
 ============
+
+WARNING: the current version package is not optimised to use with autoform 5.0.0 and higher. 4.2.2 is recommended.
+Unfortunately I do not have enough time to update the package.
+
 `$ meteor add buduguru:admin`
  		 
 This package was originally a fork of `yogiben:admin` but was moved to its own detached repo.	
